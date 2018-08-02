@@ -1,0 +1,9 @@
+{
+  "name": "fetchBids",
+  "version": "1.0.0",
+  "repository": "https://github.com/dhirajvit/fetchBids.git",
+  "author": "dhirajvit",
+  "scripts": {
+    "start": "node -e 'require(\"./src\").fetchBids()'"
+  }
+}
