@@ -8,3 +8,7 @@ yarn start
 yarn test
 
 ###### Assumption not to use transpiler
+
+###### Assumption is data is sorted
+
+For Median : Assuming the list is already sorted.
