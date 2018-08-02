@@ -18,4 +18,14 @@ describe('test ', function () {
   it('reducer test average calculation', function () {
     assert(bidsArray.reduce(reducer, bidSummary).average === 2)
   })
+  it('reducer test max calculation', function () {
+    bidsArray = [{"price": 1}, {"price": 2}, {"price": 3}, {"price": 1}]
+    bidSummary.min= bidSummary.max= bidsArray[0].price;
+    assert(bidsArray.reduce(reducer, bidSummary).max === 3)
+  })
+  it('reducer test average calculation', function () {
+    bidsArray = [{"price": 1}, {"price": 2}, {"price": 3}, {"price": 1}]
+    bidSummary.min= bidSummary.max= bidsArray[0].price;
+    assert(bidsArray.reduce(reducer, bidSummary).min === 1)
+  })
 })
