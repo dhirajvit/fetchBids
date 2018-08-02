@@ -1,3 +1,3 @@
 exports.fetchBids = function(){
-  console.log("set up")
+  return 0
 }
