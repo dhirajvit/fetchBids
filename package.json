@@ -4,7 +4,7 @@
   "repository": "https://github.com/dhirajvit/fetchBids.git",
   "author": "dhirajvit",
   "scripts": {
-    "start": "node -e 'require(\"./src\").fetchBids()'",
+    "start": "node -e 'require(\"./src\").writeBidsSummary()'",
     "test": "node ./node_modules/mocha/bin/mocha test/**/*.test.js  --reporter spec --watch"
   },
   "dependencies": {

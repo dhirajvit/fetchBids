@@ -6,6 +6,7 @@ describe('test ', function () {
   var bidSummary, bids;
   beforeEach(function () {
     bidSummary = {
+      sum:0,
       average: 0,
       median: 0,
       min: 0,
@@ -17,7 +18,7 @@ describe('test ', function () {
     assert(require('../src').fetchBids !== undefined)
   })
   it('reducer test average calculation', function () {
-    assert(bids.reduce(reducer, bidSummary).average === 2)
+    assert(((bids.reduce(reducer, bidSummary).sum) / 3 ) === 2)
   })
   it('reducer test max calculation', function () {
     bids = [{"price": 1}, {"price": 2}, {"price": 3}, {"price": 1}]
@@ -39,5 +40,4 @@ describe('test ', function () {
     bids = [{"price": 1}, {"price": 2}]
     assert(median(bids) === 1.5)
   })
-
 })
