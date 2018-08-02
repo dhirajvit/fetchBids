@@ -6,3 +6,5 @@ yarn start
 
 ###### Command to unit test application:
 yarn test
+
+###### Assumption not to use transpiler
